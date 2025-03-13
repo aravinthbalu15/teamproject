@@ -1,0 +1,103 @@
+/* Navbar Styling */
+.navbar {
+  transition: all 0.5s ease-in-out;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.transparent {
+  background: transparent;
+  backdrop-filter: blur(0px);
+  box-shadow: none;
+}
+
+.scrolled {
+  background: linear-gradient(135deg, #1e1e2f, #6a11cb);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Styling */
+.logo {
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  width: 60px; /* Adjusted for mobile */
+  height: 60px; /* Adjusted for mobile */
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 8px 12px; /* Adjusted for mobile */
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Dropdown Menu */
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background: rgba(30, 30, 47, 0.95); /* Semi-transparent dark background */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(10px);
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  color: #ffffff !important; /* White text for dropdown items */
+  padding: 8px 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+  color: #ffcc00 !important; /* Yellow text on hover */
+  background: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+}
+
+/* Ensure dropdown is visible on mobile */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    background: rgba(40, 40, 60, 0.95); /* Slightly darker for mobile */
+  }
+
+  .dropdown-item {
+    padding: 8px 12px;
+  }
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: rgba(30, 30, 47, 0.9); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 12px;
+  }
+
+  .dropdown-menu {
+    background: rgba(40, 40, 60, 0.9); /* Darker background for dropdowns */
+  }
+}

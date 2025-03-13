@@ -1,0 +1,96 @@
+/* Background Slider Styling */
+.background-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+}
+
+.bg-image.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.proverb {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; /* Adjusted for mobile */
+  font-weight: 700;
+  color: #fff;
+  max-width: 90%; /* Adjusted for mobile */
+  padding: 1rem; /* Adjusted for mobile */
+  position: absolute;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.proverb.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.proverb.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.proverb p {
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(45deg, #ffffff, #e6e6e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote-mark {
+  position: absolute;
+  font-size: 3rem; /* Adjusted for mobile */
+  opacity: 0.3;
+  font-family: 'Cinzel', serif;
+}
+
+.quote-mark.left {
+  left: -1em; /* Adjusted for mobile */
+  top: -0.5em;
+}
+
+.quote-mark.right {
+  right: -1em; /* Adjusted for mobile */
+  bottom: -0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .proverb {
+    font-size: 1.2rem;
+    max-width: 95%;
+  }
+
+  .quote-mark {
+    font-size: 2rem;
+  }
+}
