@@ -1,0 +1,73 @@
+/* Centering Upcoming Events */
+.upcoming-events {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Carousel Slides */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Event Image Styling */
+.event-card img {
+  width: 100%; /* Make image responsive */
+  max-width: 1200px; /* Set max width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Slick Dots Styling */
+.slick-dots li button:before {
+  color: #000;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
+
+/* ---------------------- RESPONSIVE DESIGN ---------------------- */
+
+/* Large Screens (Max 1200px) */
+@media (max-width: 1200px) {
+  .event-card img {
+    max-width: 1000px;
+    height: auto;
+  }
+}
+
+/* Tablets (Max 992px) */
+@media (max-width: 992px) {
+  .event-card img {
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+/* Mobile Devices (Max 768px) */
+@media (max-width: 768px) {
+  .event-card img {
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+/* Small Mobile Devices (Max 576px) */
+@media (max-width: 576px) {
+  .event-card img {
+    max-width: 100%;
+    height: auto;
+  }
+}

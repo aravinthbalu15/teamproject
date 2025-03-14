@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Global Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+}
+
+/* Section Styling */
+.container {
+  max-width: 1100px;
+}
+
+/* History Heading */
+.history-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Heading Underline Effect */
+.history-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: #ff5733;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: width 0.4s ease-in-out;
+}
+
+.history-heading:hover::after {
+  width: 120px;
+}
+
+/* History Image with Animation */
+.history-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.history-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* History Text */
+.history-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+/* View More Button with Animation */
+.view-more {
+  display: inline-block;
+  color: #ff5733;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-more::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff5733;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-more:hover::after {
+  transform: scaleX(1);
+}
+
+.view-more:hover {
+  color: #d43f00;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation */
+.history-heading,
+.history-text,
+.history-image,
+.view-more {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .history-heading {
+    font-size: 1.8rem;
+  }
+
+  .history-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .history-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .view-more {
+    text-align: center;
+    display: block;
+  }
+}

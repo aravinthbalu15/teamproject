@@ -1,0 +1,109 @@
+/* Main Wrapper */
+.president-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Main Container */
+.president-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Left Side - Image */
+.president-image-section {
+    flex-shrink: 0;
+}
+
+.president-image {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    filter: contrast(1.2) brightness(1.1); /* Enhances clarity */
+}
+
+
+/* Right Side - Text */
+.president-text-section {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* President Title Styling */
+.president-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif; /* Elegant font */
+}
+
+/* Bold Styling for Title */
+.bold-title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Colored Lines on Left and Right */
+.line-left, .line-right {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #800000; /* Dark red color */
+}
+
+/* Text Styling */
+.president-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* "More" Button */
+.president-more-btn {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.president-more-btn:hover {
+    background-color: #a00000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .president-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .president-text-section {
+        max-width: 100%;
+    }
+
+    .president-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .president-image {
+        max-width: 250px;
+    }
+}
