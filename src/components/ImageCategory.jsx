@@ -29,7 +29,7 @@ const ImageCategory = () => {
 
   return (
     <Container className="gallery-container mt-5">
-      <h2 className="section-title">Image Categories</h2>
+      <h2 className="section-title mt-5">Image Categories</h2>
       <Row>
         {categories.map((category, index) => (
           <Col md={4} sm={6} xs={12} key={index} className="mb-4">

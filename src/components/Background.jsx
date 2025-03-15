@@ -47,12 +47,12 @@ const BackgroundSlider = () => {
         ))}
       </div>
 
-      {/* <button className="arrow left-arrow" onClick={prevSlide}>
+      <button className="arrow left-arrow" onClick={prevSlide}>
         <FaArrowLeft />
       </button>
       <button className="arrow right-arrow" onClick={nextSlide}>
         <FaArrowRight />
-      </button> */}
+      </button>
     </div>
   );
 };

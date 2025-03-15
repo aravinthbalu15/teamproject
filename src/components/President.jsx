@@ -1,5 +1,5 @@
 import React from "react";
-import PresidentImage from "../images/image2.png"; // Ensure high-resolution image
+import PresidentImage from "../images/aju.webp"; // Ensure high-resolution image
 import "../Style/President.css";
 
 const President = () => {
