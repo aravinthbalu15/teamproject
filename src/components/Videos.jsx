@@ -47,7 +47,7 @@ const Videos = () => {
 
     <Container className="videos mt-5 ">
 
-      <h2 className="text-cente mt-3">Our Videos</h2>
+      <h2 className="text-cente mt-5">Our Videos</h2>
 
       <Row>
 
@@ -65,7 +65,7 @@ const Videos = () => {
 
               </video>
 
-              <h5 className="text-center mt-2">{video.title}</h5>
+             
 
             </div>
 

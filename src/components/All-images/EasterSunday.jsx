@@ -60,8 +60,8 @@ const EasterSunday = () => {
   };
 
   return (
-    <div className="gallery-container container py-5">
-      <h2 className="text-center mb-4 gallery-title">Church Gallery</h2>
+    <div className="gallery-container container py-5 mt-5">
+      <h2 className="text-center mb-4 gallery-title  ">Church Gallery</h2>
       <h2 className="section-title">Easter Sunday</h2>
 
       <div className="row g-4 justify-content-center">

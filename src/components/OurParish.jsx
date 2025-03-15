@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import "../Style/OurParish.css"; // Ensure this CSS file exists
 
 const members = [
-  { id: 1, name: "President", dob: "Jan 1, 1980", original:"Aravinth",img: "../src/images/aju.png" },
+  { id: 1, name: "President", dob: "Jan 1, 1980", original:"Aravinth",img: "../src/images/aju.webp" },
   { id: 2, name: "Vice-President", dob: "Feb 15, 1985",original:"Aju", img: "../src/images/image2.png" },
   { id: 3, name: "Secretary Vice", dob: "Mar 22, 1990", original:"Aju",img: "../src/images/image3.png" },
   { id: 4, name: "Secretary", dob: "Apr 10, 1995",original:"Aju", img: "../src/images/image4.png" },

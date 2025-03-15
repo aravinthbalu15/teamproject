@@ -24,7 +24,7 @@ const Contact = () => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="contact-container">
+      <div className="contact-container mb-5">
         <h2>Contact Us</h2>
         <p>Have a question or need assistance? Send us a message!</p>
 

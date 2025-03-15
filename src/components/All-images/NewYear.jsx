@@ -45,7 +45,7 @@ const NewYear = () => {
   };
 
   return (
-    <div className="gallery-container container py-5">
+    <div className="gallery-container container py-5 mt-5">
       <h2 className="text-center mb-4 gallery-title">Church Gallery</h2>
       <h2 className="section-title">New Year</h2>
 
